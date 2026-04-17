@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #020617;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar button {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar button:hover {
+  background: #6366f1;
+  transform: translateX(5px);
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input Card */
+textarea {
+  width: 100%;
+  height: 130px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Copy button */  
+.copy-btn {
+  background: #6366f1;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Output Card */
+#output {
+  flex: 1;
+  margin-top: 15px;
+  background: #020617;
+  border-radius: 12px;
+  padding: 15px;
+  overflow-y: auto;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Chat */
+.chat-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.chat-box button {
+  margin-left: 10px;
+  background: #6366f1;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-box button:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

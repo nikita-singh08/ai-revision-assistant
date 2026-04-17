@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+ <div class="sidebar">
+ <h2>🚀 5-Minute Revision AI</h2>
+<p style="color:#9ca3af;">Turn notes into exam-ready insights instantly</p>
+
+  <button onclick="summarize()">Summary</button>
+  <button onclick="questions()">Questions</button>
+  <button onclick="explain()">Explain</button>
+  <button onclick="checklist()">Checklist</button>
+  <button onclick="downloadPDF()">📄 Download PDF</button>
+  <h3 style="margin-top:20px;">History</h3>
+<div id="history" style="font-size:12px; max-height:200px; overflow:auto;"></div>
+</div>
+
+<div class="main">
+
+  <h2>5-Minute Revision Assistant</h2>
+  <input type="file" onchange="uploadFile(event)">
+  <textarea id="inputText" placeholder="Paste your notes here..."></textarea>
+
+  <div id="output">Your AI output will appear here...</div>
+  <div style="display:flex; justify-content:flex-end; margin-top:10px;">
+  <button onclick="copyText()" class="copy-btn">📋 Copy</button>
+</div>
+  <!-- Chat Feature -->
+  <div class="chat-box">
+    <input id="chatInput" placeholder="Ask question about your notes...">
+    <button onclick="chat()">Ask</button>
+  </div>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
