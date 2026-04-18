@@ -37,7 +37,7 @@ I built this project to:
 👉 https://regal-lollipop-c785ed.netlify.app
 
 ## 📸 Screenshots
-![App Screenshot](./screenshot.png)
+![App Screenshot](screenshot.png)
 
 ## 📂 Project Structure
 ```bash
