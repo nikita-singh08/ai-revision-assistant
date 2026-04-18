@@ -1,4 +1,4 @@
- const API_KEY = "AIzaSyCE70SqVFUJwlxF3tt6CwLTnNiXETfmIGw"; // 🔴 PUT YOUR API KEY HERE
+ const API_KEY = "YOUR_API_KEY_HERE"; // 🔴 PUT YOUR API KEY HERE
 
 async function callAPI(prompt) {
   document.getElementById("output").innerHTML = "⏳ Thinking...";
